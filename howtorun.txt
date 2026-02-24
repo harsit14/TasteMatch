@@ -1,0 +1,7 @@
+1. open powershell and type ollama serve
+2. open VS Code, go to tastematch folder and activate virtual environment using .\tastematch\Scripts\Activate.ps1
+3. Open 2 terminals and run - 
+Terminal 1:
+python mock_smartthings_api.py
+Terminal 2:
+streamlit run enhanced_demo_app.py

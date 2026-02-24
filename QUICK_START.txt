@@ -1,0 +1,110 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                  TASTEMATCH MVP - QUICK START                 ║
+║                    Pitch Demo in 30 Minutes                   ║
+╚═══════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────┐
+│  STEP 1: Install Ollama (5 min)                              │
+├─────────────────────────────────────────────────────────────┤
+│  Windows: https://ollama.ai/download                         │
+│  Then run: ollama serve     [KEEP THIS RUNNING!]             │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│  STEP 2: Download Models (10 min) - NEW TERMINAL            │
+├─────────────────────────────────────────────────────────────┤
+│  ollama pull nomic-embed-text                                │
+│  ollama pull llama3.2                                        │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│  STEP 3: Install Python Packages (2 min)                     │
+├─────────────────────────────────────────────────────────────┤
+│  pip install -r requirements.txt                             │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│  STEP 4: Get recipes.csv from Teammate!                      │
+├─────────────────────────────────────────────────────────────┤
+│  Place in same folder as these scripts                       │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│  STEP 5: Load Database (5-10 min, ONE TIME!)                │
+├─────────────────────────────────────────────────────────────┤
+│  python load_recipes.py                                      │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│  STEP 6: Test Everything (2 min)                             │
+├─────────────────────────────────────────────────────────────┤
+│  python test_setup.py                                        │
+│  [All tests must pass!]                                      │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│  STEP 7: Run Demo! 🎉                                        │
+├─────────────────────────────────────────────────────────────┤
+│  streamlit run demo_app.py                                   │
+└─────────────────────────────────────────────────────────────┘
+
+╔═══════════════════════════════════════════════════════════════╗
+║                    PRE-PITCH CHECKLIST                        ║
+╠═══════════════════════════════════════════════════════════════╣
+║  [ ] Terminal running: ollama serve                           ║
+║  [ ] Ran test_setup.py - all tests passed                    ║
+║  [ ] Demo app loads: streamlit run demo_app.py               ║
+║  [ ] Tested 2-3 sample queries successfully                  ║
+║  [ ] Profile sidebar configured with sample data             ║
+║  [ ] Recipe recommendations show correctly                   ║
+║  [ ] Laptop charged/plugged in                               ║
+║  [ ] Practiced pitch 3+ times                                ║
+╚═══════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║                    DEMO SAMPLE QUERIES                        ║
+╠═══════════════════════════════════════════════════════════════╣
+║  1. "What can I make with chicken and rice?"                  ║
+║  2. "I need a quick dinner under 30 minutes"                  ║
+║  3. "Show me heart-healthy recipes"                           ║
+║  4. "What's a good breakfast for diabetics?"                  ║
+║  5. "Which recipe is best for managing blood sugar?"          ║
+╚═══════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║                    EMERGENCY FIXES                            ║
+╠═══════════════════════════════════════════════════════════════╣
+║  Problem: "Connection refused"                                ║
+║  Fix: Make sure 'ollama serve' is running                     ║
+║                                                               ║
+║  Problem: "Model not found"                                   ║
+║  Fix: ollama pull nomic-embed-text && ollama pull llama3.2   ║
+║                                                               ║
+║  Problem: App won't start                                     ║
+║  Fix: Close everything, restart ollama serve, then demo      ║
+║                                                               ║
+║  Problem: Database empty                                      ║
+║  Fix: Delete chroma_recipes_db folder, run load_recipes.py   ║
+╚═══════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║                    FILES YOU RECEIVED                         ║
+╠═══════════════════════════════════════════════════════════════╣
+║  From Teammate:                                               ║
+║    • recipe_loader.py      [Database loader]                  ║
+║    • recipe_search.py      [Search functionality]             ║
+║    • guide.md              [Technical guide]                  ║
+║                                                               ║
+║  New Files Created:                                           ║
+║    • demo_app.py           [Main pitch demo! ⭐]              ║
+║    • load_recipes.py       [Easy database setup]             ║
+║    • test_setup.py         [Verify before pitch]             ║
+║    • requirements.txt      [Python dependencies]             ║
+║    • README.md             [Full instructions]               ║
+║    • PITCH_SCRIPT.md       [What to say/do]                  ║
+║    • SETUP_CHECKLIST.md    [Quick reference]                 ║
+║    • QUICK_START.txt       [This file!]                      ║
+╚═══════════════════════════════════════════════════════════════╝
+
+                         🚀 YOU'VE GOT THIS! 🚀
+                   Good luck with your pitch meeting!
