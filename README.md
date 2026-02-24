@@ -258,5 +258,3 @@ This is an academic project, but feedback and suggestions are welcome:
 ## 📝 License
 
 Academic project for educational purposes. Mock API data is for demonstration only and does not represent actual Samsung SmartThings data.
-
-**Institution**: [University Name]
